@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <!--Box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio.</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>           <!--Hence on clicking on home,about,services,portfolio,contact the screen moves to tht section since in style.css scroll-behaviour is smooth and since in href #home,#about, etc is mentioned hence on clicking on those sections it moves to those sections-->
+            <a href="#about" class="">About</a>
+            <a href="#skills" class="">Skills</a>
+            <a href="#portfolio" class="">Portfolio</a>
+            <a href="#contact" class="">Contact</a>
+        </nav>
+    </header>
+
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Krishnangshu Sinha</h1>
+            <h3>And I'm a <span class="typing-effect"></span></h3>   <!--span is almost like a div but span is more of a single line division-->
+            <p>I am a great and fast learner and a huge enthusiast of learning new things . I am very efficient and can promise to put my 100% in delivering perfectly all tasks assigned to me.</p>
+            <div class="social-media">
+                <a href="#" class=""><i class='bx bxl-facebook'></i></a>
+                <a href="#" class=""><i class='bx bxl-twitter' ></i></a>
+                <a href="#" class=""><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#" class=""><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="#" class="button">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="./Images/home.png" alt="" class="src">
+        </div>
+    </section>
+
+    <!--about section design-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./Images/about.png" alt="" class="src">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Enthusiastic Fresher</h3>
+            <p>I am a great learner & can grasp new things very easily. I can promise to deliver my cent-percent to the company and deliver all the tasks assigned to me with great efficiency and speed. I have completed my schooling upto 10th from Holy Child English Academy in Malda , then I completed my 12th from Sudhir Memorial institute in Kolkata , and now I am presently pursuing my B.Tech from Jadavpur University in Information Techonolgy(IT).</p>
+           <a href="#" class="button">Read more</a> 
+        </div>
+    </section>
+
+    <!--skills section design-->
+    <section class="skills" id ="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skill-container">
+            <div class="skill-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>C language</h3>
+                <p>I can write codes in C language and have a quite good knowledge on C language.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="skill-box">
+                <i class='bx bxl-c-plus-plus'></i>
+                <h3>C++ language</h3>
+                <p>I can write codes in C++ language and have a quite good knowledge on C++ language.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="skill-box">
+                <i class='bx bx-code-curly'></i>
+                <h3>SQL</h3>
+                <p>I can write query in SQL and have knowledge on SQL.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio section design-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="./Images/portfolio1.jpg" alt="" class="src">
+                <div class="portfolio-layer">
+                    <h4>Portfolio Website</h4>
+                    <p>It is my personal Portfolio Website design. Tools HTML, CSS, Javascript, Boxicons.</p>
+                    <a href="#" class=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./Images/portfolio2.jpg" alt="" class="src">
+                <div class="portfolio-layer">
+                    <h4>Website Design Clone</h4>
+                    <p>The design of the website named UsabilityHub is being cloned using HTML, CSS, Bootstrap.</p>
+                    <a href="#" class=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./Images/portfolio3.jpg" alt="" class="src">
+                <div class="portfolio-layer">
+                    <h4>World Clock(with alarm feature)</h4>
+                    <p>It is a basic design of World Clock with time of India,USA,China and has an alarm clock feature.Tools used HTML, CSS, Bootstrap.</p>
+                    <a href="#" class=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./Images/portfolio4.jpg" alt="" class="src">
+                <div class="portfolio-layer">
+                    <h4>Spotify Clone</h4>
+                    <p>It is a basic design of music player that plays music.Tools used HTML, CSS, Javascirpt, Fontawesome </p>
+                    <a href="#" class=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact section design-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input type="submit" value="Send message" class="button">
+        </form>
+    </section>
+    <footer>
+        <div class="footer-icon">
+            <a href="#home" class="button"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!--scroll reveal (this website adds the transition as we move from one page to other)-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--typing effect of the homescreen (found from google 'github typed js')-->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <!--linking the javascript-->
+    <script src="script.js"></script>   
+</body>
+</html>
